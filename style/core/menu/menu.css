@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 aside.dashboard-menu {
+  display: none;
   background-color: #069ce7;
   padding: 0.5em 0em 0em 1em;
 }

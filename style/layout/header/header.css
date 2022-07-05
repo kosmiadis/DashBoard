@@ -1,0 +1,64 @@
+header.dashboard-header {
+  border: 2px solid;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: unset;
+  align-items: center;
+}
+
+header.dashboard-header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+header.dashboard-header div.top div.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+header.dashboard-header div.top div.actions1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7em;
+}
+
+header.dashboard-header div.top div.actions1 div.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+header.dashboard-header div.bottom div.profile-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+header.dashboard-header div.bottom div.profile-bottom div.profile-greet {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+  grid-template-areas: "profile phrase" "profile name";
+}
+
+header.dashboard-header div.bottom div.actions2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}

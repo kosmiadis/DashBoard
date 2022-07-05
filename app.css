@@ -1,5 +1,99 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+header.dashboard-header {
+  border: 2px solid;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: unset;
+  align-items: center;
+}
+
+header.dashboard-header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+header.dashboard-header div.top div.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+header.dashboard-header div.top div.actions1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7em;
+}
+
+header.dashboard-header div.top div.actions1 div.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+header.dashboard-header div.bottom div.profile-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+header.dashboard-header div.bottom div.profile-bottom div.profile-greet {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+  grid-template-areas: "profile phrase" "profile name";
+}
+
+header.dashboard-header div.bottom div.actions2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+header.dashboard-header {
+  padding: 1em 2em;
+}
+
+header.dashboard-header * {
+  font-family: 'Roboto', sans-serif;
+}
+
+header.dashboard-header div.top div.search svg {
+  width: 30px;
+}
+
+header.dashboard-header div.top div.search input {
+  border: none;
+  outline: none;
+  width: 90%;
+  border-radius: 15px;
+  background-color: lightgrey;
+  font-size: 1.3em;
+}
+
+header.dashboard-header div.top div.actions1 svg {
+  width: 26px;
+}
+
+header.dashboard-header div.bottom div.profile-bottom svg {
+  width: 75px;
+}
+
 body {
   width: 100%;
   margin: 0;
@@ -56,6 +150,7 @@ aside.dashboard-menu div.options-container ul li {
 }
 
 aside.dashboard-menu {
+  display: none;
   background-color: #069ce7;
   padding: 0.5em 0em 0em 1em;
 }
@@ -92,4 +187,8 @@ aside.dashboard-menu div.options-container ul li p {
 
 aside.dashboard-menu div.options-container ul li svg {
   width: 25px;
+}
+
+main.dashboard-main {
+  display: none;
 }

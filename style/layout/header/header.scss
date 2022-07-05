@@ -1,0 +1,59 @@
+@mixin displayFlex ($gap: 0.5em) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin displayGrid ($columns: 100%, $rows: unset, $align-items: center) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    align-items: $align-items;
+
+}
+
+header.dashboard-header {
+    border: 2px solid;
+    width: 70%;
+    @include displayGrid ();
+
+    & div {
+        @include displayFlex();
+    }
+    & div.top {
+        
+        & div.search {
+            @include displayFlex();
+               
+        }
+
+        & div.actions1 {
+            @include displayFlex($gap: 0.7em);
+            
+            & div.profile {
+                @include displayFlex(1em);
+            }
+        }
+    }
+
+    & div.bottom {
+        
+        & div.profile-bottom {
+            @include displayFlex();
+            
+            & div.profile-greet {
+                @include displayGrid(50% 50%, 50% 50%, center);
+                grid-template-areas: 
+                "profile phrase"
+                "profile name";
+            }
+        }
+
+        & div.actions2 {
+            
+            @include displayFlex();
+        }
+    }
+}

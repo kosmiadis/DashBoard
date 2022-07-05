@@ -1,0 +1,54 @@
+header.dashboard-header {
+    padding: 1em 2em;
+
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+    & div.top {
+        
+        & div.search {
+            
+            & svg {
+                width: 30px;
+            }
+
+            & input {
+                border: none;
+                outline: none;
+                width: 90%;
+                border-radius: 15px;
+                background-color: lightgrey;
+                font-size: 1.3em;
+            }
+            
+        }
+
+        & div.actions1 {
+            
+            & svg {
+                width: 26px;
+            }
+
+            & div.profile {
+
+            }
+        }
+    }
+
+    & div.bottom {
+        
+        & div.profile-bottom {
+            & svg {
+                width: 75px;
+            }
+
+            & div.profile-greet {
+
+            }
+        }
+
+        & div.actions2 {
+
+        }
+    }
+}
