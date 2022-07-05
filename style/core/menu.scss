@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$dash-bg-color: #069ce7;
+
+aside.dashboard-menu {
+    background-color: $dash-bg-color;
+    padding: 0.5em 0em 0em 1em;
+
+    & svg path {
+        fill: white;
+    }
+
+    & * {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    & div.dashboard-title  {
+        
+        & p {
+            font-size: 1.8em;
+            color: white;
+            font-weight: 600;
+        }
+
+        & svg {
+            width: 60px;
+        }
+    }
+
+    & div.options-container {
+        & ul {
+            list-style-type: none;
+            padding: 16px;
+            
+            & li {
+
+                & p {
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+
+                & svg {
+                    width: 25px;
+                }
+            }
+        }
+
+        
+    }
+
+    
+}

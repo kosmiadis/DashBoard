@@ -1,4 +1,44 @@
-aside.ashboard-menu {
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+aside.dashboard-menu {
+  width: 300px;
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  justify-content: start;
+  gap: 1em;
+}
+
+aside.dashboard-menu div.dashboard-title {
   width: 100%;
-  background-color: #00aaff;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.3em;
+}
+
+aside.dashboard-menu div.options-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  justify-content: start;
+  gap: 1em;
+}
+
+aside.dashboard-menu div.options-container ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  justify-content: start;
+  gap: 0em;
+}
+
+aside.dashboard-menu div.options-container ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1.7em;
 }

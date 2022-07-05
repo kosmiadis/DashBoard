@@ -1,6 +1,4 @@
+@import "style/layout/header/header.scss";
 @import "style/layout/body/body.scss";
 @import "style/layout/DashboardMenu/menu.scss";
-
-body {
-    width: 100%;
-}
+@import "style/core/menu.scss";

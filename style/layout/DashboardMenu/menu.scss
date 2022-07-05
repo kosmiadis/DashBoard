@@ -1,4 +1,42 @@
-aside.ashboard-menu {
-    width: 100%;
-    background-color: #00aaff;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@mixin displayFlex ($flex-direction: row, $justify-content: start, $align-items: center, $gap: 0.3em) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}
+@mixin displayGrid ($gap: 1em) {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: start;
+    gap: $gap;
+}
+
+aside.dashboard-menu {    
+    width: 300px;
+    @include displayGrid();
+    
+    & div.dashboard-title {
+        width: 100%;
+        @include displayFlex();
+
+    }
+
+    & div.options-container {
+        width: 100%;
+        @include displayGrid();
+
+        & ul {
+            width: 100%;
+            @include displayGrid($gap: 0em);
+
+            & li {
+                @include displayFlex($gap: 1.7em);
+            }
+        }
+    }
+
+    
 }
