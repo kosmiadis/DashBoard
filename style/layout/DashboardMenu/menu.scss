@@ -6,12 +6,11 @@
     align-items: $align-items;
     gap: $gap;
 }
-@mixin displayGrid ($gap: 1em) {
+@mixin displayGrid () {
     display: grid;
     grid-template-columns: 100%;
     align-items: center;
     justify-content: start;
-    gap: $gap;
 }
 
 aside.dashboard-menu {    
@@ -30,7 +29,7 @@ aside.dashboard-menu {
 
         & ul {
             width: 100%;
-            @include displayGrid($gap: 0em);
+            @include displayGrid();
 
             & li {
                 @include displayFlex($gap: 1.7em);

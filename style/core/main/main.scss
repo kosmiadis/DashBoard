@@ -1,3 +1,111 @@
 main.dashboard-main {
-    display: none;
+    padding-bottom: 2rem;
+    margin-left: -5px;
+    background-color: rgb(226, 226, 232);
+    padding: 1rem;
+    
+    & div.left {
+        
+        & div.projects-container {
+            padding-left: 1em;
+
+            & p:nth-of-type(1) {
+                font-size: 1.4em;
+                font-weight: 600;
+                
+            }
+            & div.projects {
+                
+
+                & div.project {
+                    border-left: 10px solid orange;
+                    background-color: white;
+                    padding: 1rem 2.3rem;
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    & div.project-info {
+                        
+                        & p:nth-child(1) {
+                            font-size: 1.5em;
+                            font-weight: 600;
+                        }
+
+                        & p:nth-child(2) {
+                            font-size: 1em;
+                        }
+                        
+                    }   
+                }
+            }
+        }
+    }
+
+    & div.right {
+        
+        
+        & div.announcements-container {
+            & p:nth-of-type(1) {
+                font-size: 1.4em;
+                font-weight: 600;
+            }
+            
+            & div.announcements {
+                background-color: white;
+                padding: 2.5rem;
+                border-radius: 20px;
+                
+                & div.announcement {
+                    padding-top: 0.3em;
+                    border-bottom: 1px solid lightgrey;
+                   
+                    & p:nth-child(1) {
+                        font-size: 1.2em;
+                        font-weight: 600;
+                        line-height: 0.7rem;
+                    }
+
+                    & p:nth-child(2) {
+                        font-size: 0.9em;
+                        font-weight: 500;
+                        color: rgb(132, 126, 126);
+                    }
+                }
+            }
+        }
+
+        & div.trending-container {
+            
+            & p:nth-of-type(1) {
+                font-size: 1.4em;
+                font-weight: 600;
+            }
+            & div.trending {
+                background-color: white;
+                width: 90%;
+                border-radius: 20px;
+                padding: 1rem;
+                
+
+                & div.t-profile {
+                    
+                    & svg {
+                        width: 60px;
+                    }
+
+                    & div.t-profile-info {
+                        margin-left: 1em;
+                        & p {
+                            font-size: 1.1em;
+                            font-weight: normal;
+                        }
+                    
+                    }
+                }
+            }
+
+        }   
+        
+    }
 }

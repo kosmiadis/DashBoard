@@ -1,0 +1,95 @@
+main.dashboard-main {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    
+    & div.left {
+        margin-right: 2em;
+        & div.projects-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            
+            & div.projects {
+                
+                display: grid;
+                grid-template-columns: 1fr 50%;
+                gap: 2em;
+
+                & div.project {
+                    width: 80%;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    & div.project-info {
+                        text-align:left;
+                        
+                    }
+
+                    & div.project-actions {
+                        width: 40%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        align-self: end;
+
+                        & svg {
+                            width: 28px;
+                        }
+                    }   
+                }
+            }
+        }
+    }
+
+    & div.right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        & div.announcements-container {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            & div.announcements {
+                
+                display: grid;
+                grid-template-columns: 100%;
+
+                & div.announcement {
+                    display: grid;
+                    grid-template-columns: 100%;
+                    width: 90%;
+                }
+            }
+        }
+
+        & div.trending-container {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            & div.trending {
+                
+                display: grid;
+                grid-template-columns: 100%;
+
+                & div.t-profile {
+                    display: grid;
+                    grid-template-columns: 15% 40%;
+                    align-items: center;
+                    justify-content: start;
+
+                    & div.t-profile-info {
+                        line-height: 0.3rem;
+                    }
+                }
+            }
+
+        }   
+        
+    }
+}

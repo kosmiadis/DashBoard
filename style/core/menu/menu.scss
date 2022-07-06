@@ -2,9 +2,10 @@
 $dash-bg-color: #069ce7;
 
 aside.dashboard-menu {
-    display: none;
     background-color: $dash-bg-color;
-    padding: 0.5em 0em 0em 1em;
+    padding: 0em 0em 0em 1em;
+    z-index: 10;
+    box-shadow: 0px 0px 10px grey;
 
     & svg path {
         fill: white;
@@ -15,7 +16,7 @@ aside.dashboard-menu {
         color: white;
     }
     & div.dashboard-title  {
-        
+        margin-top: -250px;
         & p {
             font-size: 1.8em;
             color: white;
@@ -28,6 +29,7 @@ aside.dashboard-menu {
     }
 
     & div.options-container {
+        margin-top: -500px;
         & ul {
             list-style-type: none;
             padding: 16px;

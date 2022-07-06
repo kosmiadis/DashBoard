@@ -5,7 +5,6 @@ aside.dashboard-menu {
   grid-template-columns: 100%;
   align-items: center;
   justify-content: start;
-  gap: 1em;
 }
 
 aside.dashboard-menu div.dashboard-title {
@@ -23,7 +22,6 @@ aside.dashboard-menu div.options-container {
   grid-template-columns: 100%;
   align-items: center;
   justify-content: start;
-  gap: 1em;
 }
 
 aside.dashboard-menu div.options-container ul {
@@ -32,7 +30,6 @@ aside.dashboard-menu div.options-container ul {
   grid-template-columns: 100%;
   align-items: center;
   justify-content: start;
-  gap: 0em;
 }
 
 aside.dashboard-menu div.options-container ul li {
